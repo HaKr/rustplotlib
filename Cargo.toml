@@ -11,5 +11,11 @@ repository = "https://github.com/askanium/rustplotlib"
 readme = "README.md"
 
 [dependencies]
-svg="0.7.1"
+svg = "0.7.1"
 format_num = "0.1.0"
+
+[dev-dependencies]
+json = { version = "0" }
+
+[features]
+use_json = []
