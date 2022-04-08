@@ -84,6 +84,7 @@ where
         })
         .collect()
 }
+
 #[test]
 fn iterate_over_continuous_scale() {
     let continuous = ContinuousScale::new(800, 0.0, 360.0).offset(400);

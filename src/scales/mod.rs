@@ -10,6 +10,9 @@ pub(crate) use iter_scale::*;
 mod continuous_scale;
 pub use continuous_scale::*;
 
+mod discrete_scale;
+pub use discrete_scale::*;
+
 mod linear_scale_iter;
 pub use linear_scale_iter::*;
 

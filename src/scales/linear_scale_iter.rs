@@ -1,11 +1,9 @@
 use std::ops::{Add, Sub};
 
-use super::Continuous;
-
 #[derive(Debug)]
 pub struct LinearScaleIter<DR>
 where
-    DR: Copy + PartialOrd + Default + Sub<DR, Output = DR> + Into<Continuous>,
+    DR: Copy + PartialOrd + Default + Sub<DR, Output = DR>,
 {
     start: DR,
     end: DR,
@@ -16,7 +14,7 @@ where
 
 impl<DR> LinearScaleIter<DR>
 where
-    DR: Copy + PartialOrd + Default + Sub<DR, Output = DR> + Into<Continuous>,
+    DR: Copy + PartialOrd + Default + Sub<DR, Output = DR>,
 {
     pub fn new(start: DR, end: DR, step: DR) -> Self {
         let zero: DR = Default::default();
@@ -34,12 +32,7 @@ where
 
 impl<DR> Iterator for LinearScaleIter<DR>
 where
-    DR: Copy
-        + PartialOrd
-        + Default
-        + Add<DR, Output = DR>
-        + Sub<DR, Output = DR>
-        + Into<Continuous>,
+    DR: Copy + PartialOrd + Default + Add<DR, Output = DR> + Sub<DR, Output = DR>,
 {
     type Item = DR;
 
