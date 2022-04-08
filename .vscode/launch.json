@@ -1,0 +1,397 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in library 'charts'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--lib",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "charts",
+                    "kind": "lib"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'horizontal_bar_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=horizontal_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "horizontal_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'horizontal_bar_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=horizontal_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "horizontal_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'composite_bar_and_scatter_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=composite_bar_and_scatter_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "composite_bar_and_scatter_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'composite_bar_and_scatter_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=composite_bar_and_scatter_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "composite_bar_and_scatter_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'area_series_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=area_series_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "area_series_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'area_series_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=area_series_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "area_series_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'stacked_vertical_bar_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=stacked_vertical_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "stacked_vertical_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'stacked_vertical_bar_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=stacked_vertical_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "stacked_vertical_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'scatter_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=scatter_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "scatter_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'scatter_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=scatter_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "scatter_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'stacked_horizontal_bar_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=stacked_horizontal_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "stacked_horizontal_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'stacked_horizontal_bar_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=stacked_horizontal_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "stacked_horizontal_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'scatter_chart_two_datasets'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=scatter_chart_two_datasets",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "scatter_chart_two_datasets",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'scatter_chart_two_datasets'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=scatter_chart_two_datasets",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "scatter_chart_two_datasets",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'vertical_bar_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=vertical_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "vertical_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'vertical_bar_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=vertical_bar_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "vertical_bar_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'line_series_chart'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=line_series_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "line_series_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'line_series_chart'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=line_series_chart",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "line_series_chart",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug example 'scatter_chart_multiple_keys'",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--example=scatter_chart_multiple_keys",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "scatter_chart_multiple_keys",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug unit tests in example 'scatter_chart_multiple_keys'",
+            "cargo": {
+                "args": [
+                    "test",
+                    "--no-run",
+                    "--example=scatter_chart_multiple_keys",
+                    "--package=charts"
+                ],
+                "filter": {
+                    "name": "scatter_chart_multiple_keys",
+                    "kind": "example"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

@@ -1,6 +1,18 @@
 pub mod band;
 pub mod linear;
 
+mod scale_types;
+pub(crate) use scale_types::*;
+
+mod iter_scale;
+pub(crate) use iter_scale::*;
+
+mod continuous_scale;
+pub use continuous_scale::*;
+
+mod linear_scale_iter;
+pub use linear_scale_iter::*;
+
 #[derive(PartialEq)]
 pub enum ScaleType {
     Band,
